@@ -50,4 +50,3 @@ exports.fromUnicode = function (code) {
 exports.fromName = function (name) {
     return keysyms.records[keysyms.names[name]]
 };
-console.log(exports.keyEvent(49,true))
