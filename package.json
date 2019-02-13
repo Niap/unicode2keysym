@@ -1,0 +1,16 @@
+{
+  "name": "unicode2keysym",
+  "version": "1.0.0",
+  "description": "converts keybord event key to keysyms. based on node-keysym",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keysym",
+    "unicode",
+    "keyboard"
+  ],
+  "author": "Niap",
+  "license": "ISC"
+}
