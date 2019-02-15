@@ -13,7 +13,5 @@
   ],
   "author": "Niap",
   "license": "ISC",
-  "dependencies": {
-    "unicode2keysym": "https://github.com/Niap/unicode2keysym.git"
-  }
+  "dependencies": {}
 }

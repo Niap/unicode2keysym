@@ -2,6 +2,3 @@
 # yarn lockfile v1
 
 
-"unicode2keysym@https://github.com/Niap/unicode2keysym.git":
-  version "1.0.0"
-  resolved "https://github.com/Niap/unicode2keysym.git#8a136fc1f2d16febb5620fa84ab08bc9dd912a8b"
