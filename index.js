@@ -16,12 +16,9 @@ exports.keyEvent = function (e) {
     let key = e.key;
     let code = e.keyCode;
     let shiftMask = e.shiftKey;
-    if ("a" <= key && key <= "z") {
+    if (A <= code && code <= Z) {
         return key.charCodeAt(0);
-    }else if ("A" <= key && key <= "Z") {
-        return key.charCodeAt(0);
-    }
-    else if (events.both[code]) {
+    }else if (events.both[code]) {
         return lookup(events.both[code]);
     }
     else if (shiftMask && events.shifted[code]) {
