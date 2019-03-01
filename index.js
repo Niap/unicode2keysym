@@ -5,9 +5,6 @@ exports.fromKeysym = function (keysym) {
     return keysyms.records[keysyms.keysyms[keysym]]
 };
 
-var a = 'a'.charCodeAt(0), z = 'z'.charCodeAt(0);
-var A = 'A'.charCodeAt(0), Z = 'Z'.charCodeAt(0);
-
 function lookup (e) {
     return e.length === 1
         ? exports.fromUnicode(e)[0].keysym
@@ -15,9 +12,14 @@ function lookup (e) {
     ;
 }
 
-exports.keyEvent = function (code, shiftMask) {
-    if (A <= code && code <= Z) {
-        return code + (shiftMask ? 0 : a - A);
+exports.keyEvent = function (e) {
+    let key = e.key;
+    let code = e.keyCode;
+    let shiftMask = e.shiftKey;
+    if ("a" <= key && key <= "z") {
+        return key.charCodeAt(0);
+    }else if ("A" <= key && key <= "Z") {
+        return key.charCodeAt(0);
     }
     else if (events.both[code]) {
         return lookup(events.both[code]);
