@@ -1,6 +1,9 @@
 var keysyms  = require("./keysyms.js");
 var events = require("./events.js");
 
+var a = 'a'.charCodeAt(0), z = 'z'.charCodeAt(0);
+var A = 'A'.charCodeAt(0), Z = 'Z'.charCodeAt(0);
+
 exports.fromKeysym = function (keysym) {
     return keysyms.records[keysyms.keysyms[keysym]]
 };
